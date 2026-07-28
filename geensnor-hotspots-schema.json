@@ -36,6 +36,7 @@
           "required": ["name", "category", "description", "avoid"],
           "properties": {
             "name": { "type": "string" },
+            "oneliner": { "type": "string" },
             "description": { "type": "string" },
             "createdAt": {
               "type": "string",
