@@ -1,0 +1,35 @@
+{
+  "$schema": "../geensnor-hotspots-schema.json",
+  "type": "FeatureCollection",
+  "name": "Geensnor",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.565301, 51.957834]
+      },
+      "properties": {
+        "name": "Martino IJs",
+        "description": "Winnaar van de Gouden IJsspatel 2013 en 2014! Blijktbaar dus het beste ijs wat je kan krijgen (in Nederland). Het smaakte inderdaad prima. Bovendien niet heel erg duur. Voor 1 bolletje betaal je 1 eur...",
+        "createdAt": "2014-01-01T00:00:00Z",
+        "updatedAt": "2014-01-01T00:00:00Z",
+        "category": "bar",
+        "avoid": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.042488000000048, 47.800461]
+      },
+      "properties": {
+        "name": "Robert Standl Gastwirtschaft Zum Wilden Mann e.U.",
+        "description": "Heel erg \"Oostenrijks restaurant\". Klederdracht en de hele handel. Goed en goedkoop eten en bier!",
+        "category": "restaurant",
+        "avoid": false
+      }
+    }
+  ]
+}
