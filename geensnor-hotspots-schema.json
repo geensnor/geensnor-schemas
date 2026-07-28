@@ -3,7 +3,7 @@
   "$id": "https://geensnor.nl/schemas/geensnor-feature-collection.json",
   "title": "Geensnor Hotspots",
   "type": "object",
-  "required": ["type", "properties"],
+  "required": ["type", "name", "features"],
   "properties": {
     "type": { "const": "FeatureCollection" },
     "name": { "type": "string" },
@@ -36,8 +36,14 @@
           "required": ["name", "category", "description", "avoid"],
           "properties": {
             "name": { "type": "string" },
-            "oneliner": { "type": "string" },
-            "description": { "type": "string" },
+            "oneliner": {
+              "type": "string",
+              "description": "Korte omschrijving. Pakkende knaller!"
+            },
+            "description": {
+              "type": "string",
+              "description": "Uitgebreide omschrijving"
+            },
             "createdAt": {
               "type": "string",
               "format": "date-time"
