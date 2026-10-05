@@ -16,7 +16,8 @@
         "createdAt": "2014-01-01T00:00:00Z",
         "updatedAt": "2014-01-01T00:00:00Z",
         "category": "bar",
-        "avoid": false
+        "avoid": false,
+        "placeName": "Rhenen"
       }
     },
     {
@@ -29,7 +30,8 @@
         "name": "Robert Standl Gastwirtschaft Zum Wilden Mann e.U.",
         "description": "Heel erg \"Oostenrijks restaurant\". Klederdracht en de hele handel. Goed en goedkoop eten en bier!",
         "category": "restaurant",
-        "avoid": false
+        "avoid": false,
+        "placeName": "Wenen"
       }
     }
   ]

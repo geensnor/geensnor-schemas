@@ -5,6 +5,7 @@
   "type": "object",
   "required": ["type", "name", "features"],
   "properties": {
+    "$schema": { "type": "string" },
     "type": { "const": "FeatureCollection" },
     "name": { "type": "string" },
     "features": {
