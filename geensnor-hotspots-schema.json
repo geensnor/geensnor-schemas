@@ -25,7 +25,7 @@
         "geometry": { "$ref": "https://geojson.org/schema/Point.json" },
         "properties": {
           "type": "object",
-          "required": ["name", "category", "description", "avoid", "placeName"],
+          "required": ["name", "category", "description", "placeName"],
           "properties": {
             "name": { "type": "string" },
             "oneliner": {
@@ -51,8 +51,14 @@
                 "snackbar"
               ]
             },
-            "avoid": { "type": "boolean" },
-            "placeName": { "type": "string" }
+            "avoid": {
+              "type": "boolean",
+              "description": "true bij doodshoofd! Plaats om ver weg van te blijven!"
+            },
+            "placeName": {
+              "type": "string",
+              "description": "Handig bij het zoeken"
+            }
           },
           "additionalProperties": false
         }

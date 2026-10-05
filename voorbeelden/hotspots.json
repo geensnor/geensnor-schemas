@@ -16,7 +16,6 @@
         "createdAt": "2014-01-01T00:00:00Z",
         "updatedAt": "2014-01-01T00:00:00Z",
         "category": "bar",
-        "avoid": false,
         "placeName": "Rhenen"
       }
     },
@@ -32,6 +31,20 @@
         "category": "restaurant",
         "avoid": false,
         "placeName": "Wenen"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.142488000000048, 46.800461]
+      },
+      "properties": {
+        "name": "Doodshoofd voorbeeld",
+        "description": "Ow, dit is verschrikkelijk, niet heen gaan! AAGAARR",
+        "category": "restaurant",
+        "avoid": true,
+        "placeName": "Verschrikkelijke plaats"
       }
     }
   ]
