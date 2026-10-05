@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://geensnor.nl/schemas/geensnor-hotspots-schema.json",
+  "$id": "https://geensnor.nl/schemas/geensnor-hotspots-schema-v2.json",
   "title": "Geensnor Hotspots",
   "type": "object",
   "required": ["type", "name", "features"],
@@ -12,6 +12,7 @@
       "items": { "$ref": "#/$defs/geensnorFeature" }
     }
   },
+  "additionalProperties": false,
   "$defs": {
     "geensnorFeature": {
       "type": "object",
@@ -29,11 +30,12 @@
               "maxItems": 3,
               "items": { "type": "number" }
             }
-          }
+          },
+          "additionalProperties": false
         },
         "properties": {
           "type": "object",
-          "required": ["name", "category", "description", "avoid"],
+          "required": ["name", "category", "description", "avoid", "placeName"],
           "properties": {
             "name": { "type": "string" },
             "oneliner": {
@@ -44,14 +46,8 @@
               "type": "string",
               "description": "Uitgebreide omschrijving"
             },
-            "createdAt": {
-              "type": "string",
-              "format": "date-time"
-            },
-            "updatedAt": {
-              "type": "string",
-              "format": "date-time"
-            },
+            "createdAt": { "type": "string", "format": "date-time" },
+            "updatedAt": { "type": "string", "format": "date-time" },
             "category": {
               "enum": [
                 "bar",
@@ -65,17 +61,13 @@
                 "snackbar"
               ]
             },
-            "avoid": {
-              "type": "boolean",
-              "description": "Doodshoofdje of niet?"
-            },
-            "image": {
-              "type": "string",
-              "format": "url"
-            }
-          }
+            "avoid": { "type": "boolean" },
+            "placeName": { "type": "string" }
+          },
+          "additionalProperties": false
         }
-      }
+      },
+      "additionalProperties": false
     }
   }
 }
