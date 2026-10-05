@@ -16,7 +16,7 @@
         "createdAt": "2014-01-01T00:00:00Z",
         "updatedAt": "2014-01-01T00:00:00Z",
         "category": "bar",
-        "avoid": false
+        "placeName": "Rhenen"
       }
     },
     {
@@ -29,7 +29,26 @@
         "name": "Robert Standl Gastwirtschaft Zum Wilden Mann e.U.",
         "description": "Heel erg \"Oostenrijks restaurant\". Klederdracht en de hele handel. Goed en goedkoop eten en bier!",
         "category": "restaurant",
-        "avoid": false
+        "avoid": false,
+        "placeName": "Wenen",
+        "createdAt": "2023-01-01T00:00:00Z",
+        "updatedAt": "2023-01-01T00:00:00Z",
+        "website": "https://www.wilder-mann.at/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.142488000000048, 46.800461]
+      },
+      "properties": {
+        "name": "Doodshoofd voorbeeld",
+        "description": "Ow, dit is verschrikkelijk, niet heen gaan! AAGAARR",
+        "category": "restaurant",
+        "avoid": true,
+        "placeName": "Verschrikkelijke plaats",
+        "website": "https://www.niettevreten.com"
       }
     }
   ]

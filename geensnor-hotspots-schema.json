@@ -2,9 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://geensnor.nl/schemas/geensnor-hotspots-schema.json",
   "title": "Geensnor Hotspots",
+  "allOf": [{ "$ref": "https://geojson.org/schema/FeatureCollection.json" }],
   "type": "object",
   "required": ["type", "name", "features"],
   "properties": {
+    "$schema": { "type": "string" },
     "type": { "const": "FeatureCollection" },
     "name": { "type": "string" },
     "features": {
@@ -12,28 +14,18 @@
       "items": { "$ref": "#/$defs/geensnorFeature" }
     }
   },
+  "unevaluatedProperties": false,
   "$defs": {
     "geensnorFeature": {
+      "allOf": [{ "$ref": "https://geojson.org/schema/Feature.json" }],
       "type": "object",
       "required": ["type", "geometry", "properties"],
       "properties": {
         "type": { "const": "Feature" },
-        "geometry": {
-          "type": "object",
-          "required": ["type", "coordinates"],
-          "properties": {
-            "type": { "const": "Point" },
-            "coordinates": {
-              "type": "array",
-              "minItems": 2,
-              "maxItems": 3,
-              "items": { "type": "number" }
-            }
-          }
-        },
+        "geometry": { "$ref": "https://geojson.org/schema/Point.json" },
         "properties": {
           "type": "object",
-          "required": ["name", "category", "description", "avoid"],
+          "required": ["name", "category", "description", "placeName"],
           "properties": {
             "name": { "type": "string" },
             "oneliner": {
@@ -44,14 +36,8 @@
               "type": "string",
               "description": "Uitgebreide omschrijving"
             },
-            "createdAt": {
-              "type": "string",
-              "format": "date-time"
-            },
-            "updatedAt": {
-              "type": "string",
-              "format": "date-time"
-            },
+            "createdAt": { "type": "string", "format": "date-time" },
+            "updatedAt": { "type": "string", "format": "date-time" },
             "category": {
               "enum": [
                 "bar",
@@ -62,20 +48,31 @@
                 "koffie",
                 "muziek",
                 "strand",
-                "snackbar"
+                "snackbar",
+                "lunch"
               ]
             },
             "avoid": {
               "type": "boolean",
-              "description": "Doodshoofdje of niet?"
+              "description": "true bij doodshoofd! Plaats om ver weg van te blijven!"
+            },
+            "placeName": {
+              "type": "string",
+              "description": "Handig bij het zoeken"
             },
             "image": {
               "type": "string",
-              "format": "url"
+              "description": "URL naar een afbeelding"
+            },
+            "website": {
+              "type": "string",
+              "description": "URL van de website"
             }
-          }
+          },
+          "additionalProperties": false
         }
-      }
+      },
+      "unevaluatedProperties": false
     }
   }
 }
