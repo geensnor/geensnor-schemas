@@ -48,7 +48,8 @@
                 "koffie",
                 "muziek",
                 "strand",
-                "snackbar"
+                "snackbar",
+                "lunch"
               ]
             },
             "avoid": {
@@ -58,6 +59,14 @@
             "placeName": {
               "type": "string",
               "description": "Handig bij het zoeken"
+            },
+            "image": {
+              "type": "string",
+              "description": "URL naar een afbeelding"
+            },
+            "website": {
+              "type": "string",
+              "description": "URL van de website"
             }
           },
           "additionalProperties": false

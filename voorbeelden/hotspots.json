@@ -30,7 +30,10 @@
         "description": "Heel erg \"Oostenrijks restaurant\". Klederdracht en de hele handel. Goed en goedkoop eten en bier!",
         "category": "restaurant",
         "avoid": false,
-        "placeName": "Wenen"
+        "placeName": "Wenen",
+        "createdAt": "2023-01-01T00:00:00Z",
+        "updatedAt": "2023-01-01T00:00:00Z",
+        "website": "https://www.wilder-mann.at/"
       }
     },
     {
@@ -44,7 +47,8 @@
         "description": "Ow, dit is verschrikkelijk, niet heen gaan! AAGAARR",
         "category": "restaurant",
         "avoid": true,
-        "placeName": "Verschrikkelijke plaats"
+        "placeName": "Verschrikkelijke plaats",
+        "website": "https://www.niettevreten.com"
       }
     }
   ]
