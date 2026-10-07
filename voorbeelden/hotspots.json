@@ -13,7 +13,7 @@
         "name": "Martino IJs",
         "oneliner": "Martino ijs, in alles behalve grijs!",
         "description": "Winnaar van de Gouden IJsspatel 2013 en 2014! Blijktbaar dus het beste ijs wat je kan krijgen (in Nederland). Het smaakte inderdaad prima. Bovendien niet heel erg duur. Voor 1 bolletje betaal je 1 eur...",
-        "createdAt": "2014-01-01T00:00:00Z",
+        "visitedAt": "2014-01-01T00:00:00Z",
         "updatedAt": "2014-01-01T00:00:00Z",
         "category": "bar",
         "placeName": "Rhenen"
@@ -31,7 +31,7 @@
         "category": "restaurant",
         "avoid": false,
         "placeName": "Wenen",
-        "createdAt": "2023-01-01T00:00:00Z",
+        "visitedAt": "2023-01-01T00:00:00Z",
         "updatedAt": "2023-01-01T00:00:00Z",
         "website": "https://www.wilder-mann.at/"
       }
