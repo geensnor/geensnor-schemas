@@ -28,10 +28,6 @@
           "required": ["name", "category", "description", "placeName"],
           "properties": {
             "name": { "type": "string" },
-            "oneliner": {
-              "type": "string",
-              "description": "Korte omschrijving. Pakkende knaller!"
-            },
             "description": {
               "type": "string",
               "description": "Uitgebreide omschrijving"
